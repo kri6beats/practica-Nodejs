@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="car.css">
+  <script src="./ref.js/cartservice.js" defer></script>
+	<script src="./ref.js/cart.js" defer></script>
+	<title>Galeria de arte</title>
+</head>
+<body>
+  <header>
+		<nav>
+			<a href="./index.html"><img src="./assets/logo.png" alt="Logo" id="logo"></a>
+			<div>
+				<a href="#">musica</a>
+				<a href="#">samples</a>
+				<a href="./car.html" id="cart"><img src="./assets/carrito-de-compras.png" alt=""><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
+		<section id="productos-container">
+		</section>
+  <section id="totales">
+    <p>Total unidades: <span id="unidades">0</span></p>
+    <p>Total precio: $<span id="precio">0</span></p>
+    <button id="comprar">Comprar</button>
+    <button id="reiniciar">Reiniciar</button>
+  </section>
+</main>
+	<footer>
+		<p>entra al link <a href="https://youtube.com/@puntoJson" target="_blank">instagram</a></p>
+		<p>youtube<a href="https://youtu.be/lduIpYA66mM" target="_blank">youtube</a></p>
+	</footer>
+</body>
+</html>
