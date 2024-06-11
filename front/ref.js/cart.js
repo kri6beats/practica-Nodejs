@@ -28,14 +28,14 @@ function crearTarjetas() {
             nuevaTarjeta.getElementsByTagName("button")[0]
                 .addEventListener("click", (e) => {
                     const cuentaElement = e.target.parentElement.getElementsByTagName("span")[0];
-                    cuentaElement.innerText = agregarAlCarrito(producto);
+                    cuentaElement.innerText = agregarAlCarrito(producto.cantidad);
                     actualizarNumeroCarrito();
                     actualizarTotales();
                 });
 
             nuevaTarjeta.getElementsByTagName("button")[1]
                 .addEventListener("click", (e) => {
-                    restarAlCarrito(producto);
+                    restarAlCarrito(producto.cantidad);
                     crearTarjetas();
                     actualizarNumeroCarrito();
                     actualizarTotales()
